@@ -1,7 +1,7 @@
 const dotenv = require('dotenv');
 dotenv.config();
 const Discord = require('discord.js');
-const keepAlive = require("./server/server");
+const keepAlive = require("./server/server.js");
 
 //Discord bot
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] });
@@ -28,6 +28,5 @@ function startBot() {
     });
 }
 
-keepAlive();
 startBot();
 
